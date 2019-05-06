@@ -1,0 +1,82 @@
+<html>
+ <body>
+  // QUESTION 01:
+  <p id="demo"></p>
+  <script>
+   document.getElementById("demo").innerHTML = Math.pow(5,2);
+  </script>
+
+<hr>
+
+  // QUESTION 02:
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <script>
+
+   var num1;
+   var num2;
+   var text = "The addition of the two numbers is";
+   var text1 = "The multiplication of the two numbers is";
+   var text2 = "The subtraction of the two numbers is";
+   var text3 = "The division of the two numbers is";
+   function addNum(num1 , num2) {
+ return num1 + num2;
+}
+   function multiNum(num1 , num2) {
+ return num1 * num2;
+}
+   function subtractNum(num1 , num2) {
+ return num1 - num2;
+}
+   function divideNum(num1 , num2) {
+ return num1 / num2;
+}
+document.getElementById("demo1").innerHTML = text +" " + addNum(5,2);
+document.getElementById("demo2").innerHTML = text1 +" " + multiNum(5,2);
+document.getElementById("demo3").innerHTML = text2 +" " + subtractNum(5,2);
+document.getElementById("demo4").innerHTML = text3 +" " + divideNum(5,2);
+</script>
+
+<hr>
+
+  // QUESTION 03:
+
+   <button onclick="alert('Hello World')">click me</button>
+
+<hr>
+
+  // QUESTION 04:
+  <p id="demo5"></p>
+  <script>
+   var length;
+   var width;
+   var height;
+   function calculate(length,width,height){
+ return length*width*height;
+ }
+ document.getElementById("demo5").innerHTML = calculate(5,4,2);
+  </script>
+
+<hr>
+
+  // QUESTION 05:
+  <p id="demo6"></p>
+  <script>
+  var person = {firstName : "Nimal" , lastName : "Raj" , age : 15, city : "Kandy"};
+  document.getElementById("demo6").innerHTML = "My name is" +" "+ person.firstName + " " + person.lastName
+  + "." + "I'm" + " " + person.age  + "   " + "years old." + "I live an" + " " + person.city + ".";
+  </script>
+
+<hr>
+
+  // QUESTION 06:
+    <p id="demo7"></p>
+  <script>
+  var course = {courseName : "BIT", courseFee : "Rs 150 000", startDate :"12.06.2018", center : "Our Office"};
+  document.getElementById("demo7").innerHTML = "Course Name:" + " " + course.courseName + "<br>" + "Course Fee:" + " " + course.courseFee
+  + "<br>" + "Start Date:" + " " + "12.06.2018" + "<br>" + "Center:" + " " + course.center;
+  </script>
+</body>
+</html>
